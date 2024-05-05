@@ -3,10 +3,12 @@
 	"package": "com.pinktarr.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixin": [
-		"ItemSettingsPatch",
-		"VaultExplodePatch",
-		"ProjectileSpeedOnTickPatch",
-		"WorldBorderSetMaxRadPatch"
+		"WorldBorderPatch",
+		"WorldBorderStaticAreaPatch",
+		"WorldPatch",
+		"MCServerPatch",
+		"PlayerBorderClampPatch",
+		"MobBorderClampPatch"
 	],
 	"injectors": {
 		"defaultRequire": 1

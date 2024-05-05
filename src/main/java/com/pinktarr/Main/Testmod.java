@@ -23,6 +23,34 @@ import net.fabricmc.fabric.mixin.gametest.MinecraftServerMixin;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+
+/* 
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ *  THE WORLD BORDER CODE IS NOT MINE: https://github.com/jaskarth/farlands/tree/master/src/main/java/supercoder79/farlands/mixin
+ */
+
+
+
+
 public class Testmod implements ModInitializer {
 	//private static float y = 0;
 	//public static float getY() {return y;}
