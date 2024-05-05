@@ -18,6 +18,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.ItemActionResult;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.World;
 
 @Mixin(VaultBlock.class)
@@ -25,12 +26,14 @@ public class VaultExplodePatch {
 	@Inject(at = @At("HEAD"), method = "onUseWithItem")
 	private void use(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit,CallbackInfoReturnable<ItemActionResult> info)
 	{
-		for (int i = 5; i <= 75; i += 7) {
+		for (int i = 1; i <= 31; i += 2) {
 
 			TntEntity tnt = ((EntityType<TntEntity>) EntityType.get("minecraft:tnt").get()).create(world);
-			tnt.updatePosition(pos.getX(),pos.getY()+0.8,pos.getZ());
+			tnt.updatePosition(pos.getX(),pos.getY()+1.2,pos.getZ());
 			tnt.setFuse(i);
+			tnt.updateVelocity(1.5f, new Vec3d(0,1,0));
 			world.spawnEntity(tnt);
 		}
+		
 	}
 }

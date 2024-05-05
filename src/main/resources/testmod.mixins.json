@@ -4,7 +4,9 @@
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ItemSettingsPatch",
-		"VaultExplodePatch"
+		"VaultExplodePatch",
+		"ProjectileSpeedOnTickPatch",
+		"WorldBorderSetMaxRadPatch"
 	],
 	"injectors": {
 		"defaultRequire": 1
