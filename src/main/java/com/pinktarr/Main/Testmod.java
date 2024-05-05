@@ -32,7 +32,7 @@ public class Testmod implements ModInitializer {
 	// It is considered best practice to use your mod id as the logger's name.
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static double LightspeedCalc(double value) {
-		return value * 1.4 * rules.get(LIGHTSPEED_PROJECTILES).get().getValue();
+		return value * 1.4 * Testmod.rules.get(LIGHTSPEED_PROJECTILES).get().getValue();
 	}
 	public static GameRules rules;
 	
@@ -43,11 +43,11 @@ public class Testmod implements ModInitializer {
     public static boolean vaultsExplode;
     
     
-    // public static final CustomGameRuleCategory TARRTEST_CATEGORY = new CustomGameRuleCategory(new Identifier("testmod", "tarrtest"), Text.literal("Tarr Tests").styled(style -> style.withBold(true).withColor(Formatting.LIGHT_PURPLE)));
+    public static final CustomGameRuleCategory TARRTEST_CATEGORY = new CustomGameRuleCategory(new Identifier("testmod", "tarrtest"), Text.literal("Tarr Tests").styled(style -> style.withBold(true).withColor(Formatting.LIGHT_PURPLE)));
     public static final GameRules.Key<GameRules.BooleanRule> EXPLOSIVE_TRIALS =
-    		GameRuleRegistry.register("evilVaults", Category.MISC, GameRuleFactory.createBooleanRule(true,(server, rule) -> {vaultsExplode = rule.get();}));
+    		GameRuleRegistry.register("evilVaults", TARRTEST_CATEGORY, GameRuleFactory.createBooleanRule(true,(server, rule) -> {vaultsExplode = rule.get();}));
     public static final GameRules.Key<EnumRule<LightSpeedProjectileGameruleValues>> LIGHTSPEED_PROJECTILES =
-    		GameRuleRegistry.register("lightspeedProjectiles", Category.MISC, GameRuleFactory.createEnumRule((LightSpeedProjectileGameruleValues.OFF), (server, rule) -> {LightspeedProjectilesValue = rule.get();}));
+    		GameRuleRegistry.register("lightspeedProjectiles", TARRTEST_CATEGORY, GameRuleFactory.createEnumRule((LightSpeedProjectileGameruleValues.OFF), (server, rule) -> {LightspeedProjectilesValue = rule.get();}));
 
 	@Override
 	public void onInitialize() {

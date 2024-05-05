@@ -28,7 +28,7 @@ public class VaultExplodePatch {
 	@Inject(at = @At("HEAD"), method = "onUseWithItem")
 	private void use(ItemStack stack, BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit,CallbackInfoReturnable<ItemActionResult> info)
 	{
-		if (Testmod.rules.getBoolean(Testmod.EXPLOSIVE_TRIALS)) {
+		if (world.getGameRules().getBoolean(Testmod.EXPLOSIVE_TRIALS)) {
 			for (int i = 1; i <= 31; i += 2) {
 
 				TntEntity tnt = ((EntityType<TntEntity>) EntityType.get("minecraft:tnt").get()).create(world);
