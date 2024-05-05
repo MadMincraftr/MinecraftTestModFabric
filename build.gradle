@@ -34,7 +34,7 @@ dependencies {
     mappings "net.fabricmc:yarn:24w18a+build.2:v2"
     modImplementation "net.fabricmc:fabric-loader:0.15.11"
 	// Fabric API. This is technically optional, but you probably want it anyway.
-	modImplementation "curse.maven:fabric-api-306612:5315309"
+	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 }
 

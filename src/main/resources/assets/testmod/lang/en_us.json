@@ -1,0 +1,8 @@
+{
+  "gamerule.evilVaults": "Vaults fight back",
+  "gamerule.lightspeedProjectiles": "Enable lightspeed projectiles",
+  "gamerule.lightspeedProjectilesRate": "Lightspeed projectiles multiplier",
+  "gamerule.evilVaults.description": "Careful! the vaults are explosive.",
+  "gamerule.lightspeedProjectiles.description": "The projectiles go to space",
+  "gamerule.lightspeedProjectilesRate.description": "The lightspeed projectiles option's speed modifier'"
+}

@@ -10,15 +10,16 @@ import com.pinktarr.Main.Testmod;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.util.math.Vec3d;
+import net.minecraft.world.World;
 
-//@Mixin(PersistentProjectileEntity.class)
-@Mixin(PlayerEntity.class)
+@Mixin(PersistentProjectileEntity.class)
 public class ProjectileSpeedOnTickPatch {
 	
 	@Inject(at = @At("HEAD"), method = "tick")
 	public void onTick(CallbackInfo info) {
 		var obj = (PersistentProjectileEntity)(Object)this;
 		var vel = obj.getVelocity();
-		obj.setVelocity(vel.x*1.4,vel.y*1.4,vel.z*1.4);
+		obj.setVelocity(Testmod.LightspeedCalc(vel.x),Testmod.LightspeedCalc(vel.y),Testmod.LightspeedCalc(vel.z));
+		
 	}
 }

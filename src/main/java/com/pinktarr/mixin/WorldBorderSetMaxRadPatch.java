@@ -8,8 +8,9 @@ import org.spongepowered.asm.mixin.injection.ModifyVariable;
 
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.world.ServerWorld;
+import net.minecraft.world.border.WorldBorder;
 
-@Mixin(ServerWorld.class)
+@Mixin(WorldBorder.class)
 public class WorldBorderSetMaxRadPatch {
 	@ModifyVariable(at=@At("HEAD"), ordinal=0, method="setMaxRadius")
 	public int setBorderMax(int rad) {
