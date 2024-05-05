@@ -2,11 +2,8 @@
 	"required": true,
 	"package": "com.pinktarr.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"mixin": [
-		"ItemSettingsPatch",
-		"VaultExplodePatch",
-		"ProjectileSpeedOnTickPatch",
-		"WorldBorderSetMaxRadPatch"
+	"client": [
+		"CameraPatch"
 	],
 	"injectors": {
 		"defaultRequire": 1
