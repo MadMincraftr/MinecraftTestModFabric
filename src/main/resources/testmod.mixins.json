@@ -3,10 +3,7 @@
 	"package": "com.pinktarr.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"server": [
-		"ItemSettingsPatch",
-		"VaultExplodePatch",
-		"ProjectileSpeedOnTickPatch",
-		"WorldBorderSetMaxRadPatch"
+		"ClampPatch"
 	],
 	"injectors": {
 		"defaultRequire": 1
