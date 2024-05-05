@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.pinktarr.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"ItemSettingsPatch",
+		"VaultExplodePatch"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
