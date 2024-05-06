@@ -7,6 +7,7 @@ import net.minecraft.util.math.MathHelper;
 
 @Mixin(MathHelper.class)
 public class ClampPatch {
+	@Overwrite
 	public static int clamp(int value, int min, int max) {
 		return value;
     }
