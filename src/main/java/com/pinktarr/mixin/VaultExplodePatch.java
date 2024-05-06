@@ -39,7 +39,5 @@ public class VaultExplodePatch {
 			}
 		}
 		
-		Testmod.LOGGER.warn(Testmod.rules.get(Testmod.LIGHTSPEED_PROJECTILES).get().toString());
-		
 	}
 }

@@ -45,9 +45,9 @@ public class Testmod implements ModInitializer {
     
     public static final CustomGameRuleCategory TARRTEST_CATEGORY = new CustomGameRuleCategory(new Identifier("testmod", "tarrtest"), Text.literal("Tarr Tests").styled(style -> style.withBold(true).withColor(Formatting.LIGHT_PURPLE)));
     public static final GameRules.Key<GameRules.BooleanRule> EXPLOSIVE_TRIALS =
-    		GameRuleRegistry.register("evilVaults", TARRTEST_CATEGORY, GameRuleFactory.createBooleanRule(true,(server, rule) -> {vaultsExplode = rule.get();}));
+    		GameRuleRegistry.register("evilVaults", TARRTEST_CATEGORY, GameRuleFactory.createBooleanRule(true));
     public static final GameRules.Key<EnumRule<LightSpeedProjectileGameruleValues>> LIGHTSPEED_PROJECTILES =
-    		GameRuleRegistry.register("lightspeedProjectiles", TARRTEST_CATEGORY, GameRuleFactory.createEnumRule((LightSpeedProjectileGameruleValues.OFF), (server, rule) -> {LightspeedProjectilesValue = rule.get();}));
+    		GameRuleRegistry.register("lightspeedProjectiles", TARRTEST_CATEGORY, GameRuleFactory.createEnumRule((LightSpeedProjectileGameruleValues.OFF)));
 
 	@Override
 	public void onInitialize() {
