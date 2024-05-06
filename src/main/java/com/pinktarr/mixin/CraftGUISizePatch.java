@@ -10,13 +10,15 @@ import net.minecraft.inventory.CraftingInventory;
 
 @Mixin(CraftingInventory.class)
 public class CraftGUISizePatch {
-	@ModifyVariable(at=@At("HEAD"), method = "<init>(Lnet/minecraft/screen/ScreenHandler;II)V",ordinal=0)
-	public int width(int width) {
+	@ModifyVariable(at=@At("HEAD"), method = "<init>",ordinal=0)
+	private static int width(int width) {
+		if (width != 3) return width; 
 		Testmod.LOGGER.info("Injecting into crafting!");
 		return 4;
 	}
-	@ModifyVariable(at=@At("HEAD"), method = "<init>(Lnet/minecraft/screen/ScreenHandler;II)V",ordinal=1)
-	public int height(int height) {
+	@ModifyVariable(at=@At("HEAD"), method = "<init>",ordinal=1)
+	private static int height(int height) {
+		if (height != 3) return height; 
 		return 4;
 	}
 }

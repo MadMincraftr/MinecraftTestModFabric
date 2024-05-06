@@ -11,8 +11,9 @@ import net.minecraft.block.FluidBlock;
 @Mixin(Blocks.class)
 public class BlockRegisterPatch {
 	@ModifyVariable(at=@At("HEAD"), method = "register",ordinal=0)
-	public Block registerAsFluid(Block block) {
-		var fluid = (FluidBlock)(Block)block;
+	private static Block registerAsFluid(Block block) {
+		var bl = (Block)block;
+		var fluid = (FluidBlock)bl;
 		return fluid;
 	}
 }
