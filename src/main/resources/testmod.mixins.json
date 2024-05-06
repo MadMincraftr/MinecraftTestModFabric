@@ -7,8 +7,7 @@
 		"WorldBorderStaticAreaPatch",
 		"WorldPatch",
 		"MCServerPatch",
-		"PlayerBorderClampPatch",
-		"MobBorderClampPatch"
+		"PlayerBorderClampPatch"
 	],
 	"injectors": {
 		"defaultRequire": 1
