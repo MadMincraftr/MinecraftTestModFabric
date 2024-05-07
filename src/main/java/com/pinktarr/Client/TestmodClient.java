@@ -10,7 +10,7 @@ public class TestmodClient implements ClientModInitializer {
 
 	@Override
 	public void onInitializeClient() {
-
+		// Register the command
 		PayloadTypeRegistry.playS2C().register(CameraSharedPosPayload.ID, CameraSharedPosPayload.codec);
 		ClientPlayNetworking.registerGlobalReceiver(CameraSharedPosPayload.ID, (payload, context) -> {
 		  context.client().execute(() -> {

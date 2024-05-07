@@ -15,6 +15,9 @@
 	"icon": "assets/testmod/icon.png",
 	"environment": "*",
 	"entrypoints": {
+		"client":[
+			"com.pinktarr.Client.TestmodClient"
+		],
 		"main": [
 			"com.pinktarr.Main.Testmod"
 		]
