@@ -2,11 +2,9 @@
 	"required": true,
 	"package": "com.pinktarr.mixin",
 	"compatibilityLevel": "JAVA_21",
-	"server": [
-		"ItemSettingsPatch",
-		"VaultExplodePatch",
-		"ProjectileSpeedOnTickPatch",
-		"WorldBorderSetMaxRadPatch"
+	"mixins": [
+		"ProjectileMixin",
+		"ArrowEntityMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
